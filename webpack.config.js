@@ -6,7 +6,7 @@ const rules = [{
   exclude: /node_modules/,
   // babelを使用する
   loader: 'babel-loader',
-}];
+}, ];
 
 module.exports = {
   // ブラウザ環境で使用するためwebをtargetとする
@@ -25,11 +25,11 @@ module.exports = {
   },
   module: {
     // ビルド時に使用するルール（上で設定）を設定
-    rules
+    rules,
   },
   resolve: {
     // 対象とする拡張子を指定
-    extensions: ['.ts', '.tsx', '.js']
+    extensions: ['.ts', '.tsx', '.js'],
   },
   // webpack-dev-serverの設定
   devServer: {
